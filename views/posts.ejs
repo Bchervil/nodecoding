@@ -1,0 +1,12 @@
+<% include ./partials/header %>
+
+<div class="post-container">
+  <% for (let post of posts) { %>
+    <div class='post-block'>
+      <div class="post-title"><%= post.title %></div>
+      <div class="post-body">by <%= post.body %></div>
+    </div>
+  <% } %>
+</div>
+
+<% include ./partials/footer %>
